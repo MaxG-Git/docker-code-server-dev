@@ -49,7 +49,14 @@ services:
        - ./data:/config    
     restart: unless-stopped
 
-
+  oracle-db:
+    image: oracleinanutshell/oracle-xe-11g:latest
+    ports:
+      - 1521:1521
+      - 5500:5500
+      - 8446:8080
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
 
 # ------ IFM Container ------ #
   ifm:
