@@ -1,0 +1,70 @@
+version: '2.1'
+
+services:
+
+
+# ------ Raw HTML Container ------ #
+  raw: 
+    container_name: code-server-raw
+    build: ./.build/raw/nginx
+    image: code-server-raw:beta
+    volumes:
+       - ./data:/data/code-volume
+    links:
+      - php
+    ports:
+      - 8444:80
+    stdin_open: true
+    restart: unless-stopped
+
+
+# ------ Raw PHP Container ------ #
+  php:
+    container_name: code-server-php
+    image: php:fpm
+    volumes:
+        - ./data:/data
+    ports:
+      - 9000:9000
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_enable=1
+        
+
+
+# ------ VS Code-Server Container ------ #
+  code-server:
+    container_name: code-server
+    # image: linuxserver/code-server
+    build: ./.build/code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Toronto
+      - PASSWORD=${MASTER_PASSWORD} #optional 
+      - SUDO_PASSWORD=${MASTER_PASSWORD} #optional 
+      - JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+      ports:
+      - 8443:8443
+    volumes:
+       - ./data:/config    
+    restart: unless-stopped
+
+
+
+# ------ IFM Container ------ #
+  ifm:
+    container_name: ifm-server
+    build: ./.build/ifm
+    image: ifm:beta
+    environment:
+      - IFM_DOCKER_UID=1000
+      - IFM_DOCKER_GID=1000
+      - FM_ROOT_DIR=/var/www
+      - IFM_ROOT_PUBLIC_URL=http://127.0.0.1:8445/content
+      - IFM_TMP_DIR=/tmp
+    ports:
+      - 8445:80
+    volumes:
+       - ./data:/data/code-volume
+    stdin_open: true
+    restart: unless-stopped

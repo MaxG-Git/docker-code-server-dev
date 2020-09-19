@@ -1,0 +1,34 @@
+types {
+        text/html sql;
+        text/html cs;
+        text/html bash;
+        image/gif gif;
+        image/jpeg jpeg jpg;
+        application/msword doc;
+        application/pdf pdf;
+        video/3gpp 3gpp 3gp;
+        video/mp2t ts;
+        video/mp4 mp4;
+        video/mpeg mpeg mpg;
+        video/quicktime mov;
+        video/webm webm;
+        video/x-flv flv;
+        video/x-m4v m4v;
+        video/x-mng mng;
+        video/x-ms-asf asx asf;
+        video/x-ms-wmv wmv;
+        video/x-msvideo avi;
+        audio/midi mid midi kar;
+        audio/mpeg mp3;
+        audio/ogg ogg;
+        audio/x-m4a m4a;
+        audio/x-realaudio ra;
+        image/png png;
+        image/tiff tif tiff;
+        image/vnd.wap.wbmp wbmp;
+        image/x-icon ico;
+        image/x-jng jng;
+        image/x-ms-bmp bmp;
+        image/svg+xml svg svgz;
+        image/webp webp;
+}
