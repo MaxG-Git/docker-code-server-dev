@@ -43,7 +43,7 @@ services:
       - PASSWORD=${MASTER_PASSWORD} #optional 
       - SUDO_PASSWORD=${MASTER_PASSWORD} #optional 
       - JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-      ports:
+    ports:
       - 8443:8443
     volumes:
        - ./data:/config    
