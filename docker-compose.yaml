@@ -67,7 +67,7 @@ services:
       - IFM_DOCKER_UID=1000
       - IFM_DOCKER_GID=1000
       - FM_ROOT_DIR=/var/www
-      - IFM_ROOT_PUBLIC_URL=http://127.0.0.1:8445/content
+      - IFM_ROOT_PUBLIC_URL=http://127.0.0.1:8444/content
       - IFM_TMP_DIR=/tmp
     ports:
       - 8445:80
