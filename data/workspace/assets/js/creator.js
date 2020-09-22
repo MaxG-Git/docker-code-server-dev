@@ -15,9 +15,10 @@ let backString = link.substring(link.indexOf('/')+2);
 let backA = backString.substring(0, backString.indexOf(':')+1);   //For non port configuration --> backString.substring(0, backString.indexOf('/'));
 let backB = backString.substring(backString.indexOf('content/')+8, backString.lastIndexOf('/'))
 let IFMport = "8445"; // For port configuration
+let TLSheader = "http://"
 
-back.setAttribute("href", "https://" +backA + IFMport + "#" +backB);
-home.setAttribute("href", "https://" +backA + IFMport);
+back.setAttribute("href", TLSheader + backA + IFMport + "#" +backB);
+home.setAttribute("href", TLSheader + backA + IFMport);
 
 preBlock.setAttribute("data-src", "/"+backString.substring(backString.indexOf('content/')+8));
 
