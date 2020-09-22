@@ -9,7 +9,7 @@ This Is my **educational** docker development environment. This development envi
 * ℹ [What is Included](https://github.com/MaxG-Git/docker-code-server-dev#what-is-included-%E2%84%B9)
 * ℹ [How Does This Work](https://github.com/MaxG-Git/docker-code-server-dev#how-does-this-work-%E2%84%B9)
 * ℹ [Installation](https://github.com/MaxG-Git/docker-code-server-dev#installation-%E2%84%B9)
-    * [Avaliable values for `.env`](https://github.com/MaxG-Git/docker-code-server-dev#)
+    * [Avaliable values for `.env`](https://github.com/MaxG-Git/docker-code-server-dev#available-values-for-env)
 * ℹ [Stop Containers](https://github.com/MaxG-Git/docker-code-server-dev#stop-containers-%E2%84%B9)
 * ℹ [Accessing Services](https://github.com/MaxG-Git/docker-code-server-dev#accessing-services-%E2%84%B9)
 * ♥ [Credits](https://github.com/MaxG-Git/docker-code-server-dev#credits-)
@@ -68,9 +68,9 @@ Use your Favorite editor and open `.env` file in the cloned repository.
 
 Current Available Environment Variables
 - `MASTER_PASSWORD` - Password Used for code-server (If left blank no password will be used)
-- `HOST_IP` - Should be set to you PC internal IP4 Address (Ex. 192.168.0.15)
-- `COMPOSE_CONVERT_WINDOWS_PATHS` - Only needed if running on windows, this configures the paths correctly (should be set to 1 on windows)
-- `TZ` Timezone for code-server container. Example value: `America/Toronto`
+- `HOST_IP` - Should be set to you PC internal IP4 Address (Example value: `192.168.0.15`)
+- `COMPOSE_CONVERT_WINDOWS_PATHS` - Only needed if running on windows, this configures the paths correctly (should be set to `1` on windows)
+- `TZ` - Timezone for code-server container. (Example value: `America/Toronto`)
 
 #### Set 3
 Run docker-compose in the downloaded "docker-code-server-dev" folder
