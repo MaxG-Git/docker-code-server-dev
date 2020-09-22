@@ -1,0 +1,116 @@
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("/assets/fonts/UbuntuMono/UbuntuMono.woff2") format("woff2"),
+    url("/assets/fonts/UbuntuMono/UbuntuMono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+ /* -=- Scroll Bar Theming -=-  */
+  ::-webkit-scrollbar-track{
+	border: 1px solid black;
+	background-color: rgb(150, 133, 187);
+	
+}
+::-webkit-scrollbar{
+	width: 12px;
+	background-color: #5F4A8B;
+	
+}
+::-webkit-scrollbar-thumb{
+	background-color: #160033;
+	
+}
+
+ /* -=- Main Page -=-  */
+body{
+  background-color: #5F4A8B;
+}
+
+h2.title{
+  display: inline-block;
+  font-family: 'Ubuntu Mono';
+  color: #5F4A8B;
+  background-color: rgb(150, 133, 187);
+  border-radius: 5px;
+  padding: 0.4rem;
+  margin: 0;
+}
+
+div#rawContent{
+  display: none;
+}
+
+ /* -=- Nav Menu -=-  
+ body>div#label{
+  font-family: 'Ubuntu Mono';
+  color: #5F4A8B;
+  background-color: rgb(150, 133, 187);
+  border-radius: 5px;
+  width: min-content;
+  
+  
+ }
+ body>div#label>p{
+display: block;
+font-size: 14pt;
+padding: 1px;
+ }
+*/
+
+ /* -=- Nav Menu -=-  */
+nav.menu{
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}
+
+nav.menu>a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(39,40,34);
+  border-radius: 10px;
+  opacity: 100%;
+  margin: 0 1rem 0 0;
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  transition: width 1s, height 1s;
+}
+nav.menu>a:hover{
+  background-color: #160033;
+  width: 6rem;
+  height: 6rem;
+}
+
+nav.menu>a:hover >img>svg{
+  fill:"black";
+}
+
+nav.menu>a>img{
+  height: 70%;
+  margin: auto;
+}
+.menuIcon{
+  fill: #B9B9B3;
+}
+
+.material-icons.nav-menu { 
+  color: #999999;
+  transition: font-size 1s;
+}
+
+nav.menu>a:hover .material-icons.nav-menu { 
+  font-size: 4rem;
+  color: white;
+}
+
+nav.menu> a#home{
+  margin-left: auto;
+  margin-right: 0;
+}
