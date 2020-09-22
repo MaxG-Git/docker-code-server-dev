@@ -24,8 +24,8 @@ This Is my **educational** docker development environment. This development envi
 
 ## What is included? ℹ
 - [cdr/code-server](https://github.com/cdr/code-server) (A web-based VScode)
-    - Java JDK/JRE - (Debbuging working) 
-    - PHP - (Debbuging working)
+    - Java JDK/JRE - (Debugging working) 
+    - PHP - (Debugging working)
     - .Net Framework - 2 versions included - one for PLSQL (Debugging WIP)
 - [misterunknown/IFM](https://github.com/misterunknown/ifm) (A beautiful front-end file manager)
 - [nginx](https://hub.docker.com/_/nginx) Front end Web server for files
