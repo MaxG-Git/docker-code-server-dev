@@ -52,9 +52,9 @@ services:
   oracle-db:
     image: oracleinanutshell/oracle-xe-11g:latest
     ports:
-      - 1521:8431
-      - 5500:8430
-      - 8446:8446
+      - 8431:1521
+      - 8430:5500
+      - 8446:8085
     environment:
       - ORACLE_ALLOW_REMOTE=true
 
