@@ -64,7 +64,7 @@ nano .env
 
 Use your Favorite editor and open `.env` file in the cloned repository.
 
-#### Available values for `.env`
+##### Available values for `.env`
 
 Current Available Environment Variables
 - `MASTER_PASSWORD` - Password Used for code-server (If left blank no password will be used)
@@ -72,7 +72,7 @@ Current Available Environment Variables
 - `COMPOSE_CONVERT_WINDOWS_PATHS` - Only needed if running on windows, this configures the paths correctly (should be set to `1` on windows)
 - `TZ` - Timezone for code-server container. (Example value: `America/Toronto`)
 
-#### Set 3
+#### Set 4
 Run docker-compose in the downloaded "docker-code-server-dev" folder
 ```bash
 sudo docker-compose up -d
