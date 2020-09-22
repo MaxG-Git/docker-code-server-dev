@@ -17,8 +17,6 @@ This Is my **educational** docker development environment. This development envi
 ## Please Note ⚠
 **This is a work-in-progress!** Expect errors to arise! When they do please fill out a new issue or if you would like to try and fix the given issue set up a pull request!
 
-docker-code-server-dev#accessing-services)
-
 ## Dependencies ⚠
 - docker & docker-compose
 - 2GB of RAM on host machine is recommended
