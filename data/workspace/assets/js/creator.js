@@ -12,11 +12,12 @@ var codeBlock = $$("language-txt");
 var thisUrl = $("url");
 var preBlock = $("preBlock");
 let backString = link.substring(link.indexOf('/')+2);
-let backA = backString.substring(0, backString.indexOf('/'));
+let backA = backString.substring(0, backString.indexOf(':')+1);   //For non port configuration --> backString.substring(0, backString.indexOf('/'));
 let backB = backString.substring(backString.indexOf('content/')+8, backString.lastIndexOf('/'))
+let IFMport = "8445"; // For port configuration
 
-back.setAttribute("href", "https://" +backA + "#" +backB);
-home.setAttribute("href", "https://" +backA );
+back.setAttribute("href", "https://" +backA + IFMport + "#" +backB);
+home.setAttribute("href", "https://" +backA + IFMport);
 
 preBlock.setAttribute("data-src", "/"+backString.substring(backString.indexOf('content/')+8));
 
