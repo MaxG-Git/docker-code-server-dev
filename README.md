@@ -3,14 +3,15 @@ This Is my **educational** docker development environment. This development envi
 
 
 
-### Readme Tree 🌳
-* [Please Note](https://github.com/MaxG-Git/docker-code-server-dev#please-note-)
-* [Dependencies](https://github.com/MaxG-Git/docker-code-server-dev#dependencies-)
-* [What is Included](https://github.com/MaxG-Git/docker-code-server-dev#what-is-included-)
-* [How Does This Work](https://github.com/MaxG-Git/docker-code-server-dev#how-does-this-work-)
-* [Installation](https://github.com/MaxG-Git/docker-code-server-dev#installation-)
-* [Stop Containers](https://github.com/MaxG-Git/docker-code-server-dev#stop-containers-)
-* [Accessing Services](https://github.com/MaxG-Git/docker-code-server-dev#accessing-services-)
+## Readme Tree 🌳
+* ⚠ [Please Note](https://github.com/MaxG-Git/docker-code-server-dev#please-note-)
+* ⚠ [Dependencies](https://github.com/MaxG-Git/docker-code-server-dev#dependencies-)
+* ℹ [What is Included](https://github.com/MaxG-Git/docker-code-server-dev#what-is-included-%E2%84%B9)
+* ℹ [How Does This Work](https://github.com/MaxG-Git/docker-code-server-dev#how-does-this-work-%E2%84%B9)
+* ℹ [Installation](https://github.com/MaxG-Git/docker-code-server-dev#installation-%E2%84%B9)
+* ℹ [Stop Containers](https://github.com/MaxG-Git/docker-code-server-dev#stop-containers-%E2%84%B9)
+* ℹ [Accessing Services](https://github.com/MaxG-Git/docker-code-server-dev#accessing-services-%E2%84%B9)
+* ♥ [Credits](https://github.com/MaxG-Git/docker-code-server-dev#credits-)
 
 
 ## Please Note ⚠
@@ -33,8 +34,7 @@ docker-code-server-dev#accessing-services)
     - PHP installed inside container for frontend
     - [prismjs](https://prismjs.com/) for frontend end code syntax
     - Some extra assets for styling code rendering/url path ing
-- [Oracle xe (PLSQL)](https://hub.docker.com/r/oracleinanutshell/oracle-xe-11g)
-- [](https://github.com/MaxG-Git/docker-code-server-dev#credits)
+- [Oracle xe 11g (PLSQL)](https://hub.docker.com/r/oracleinanutshell/oracle-xe-11g)
 
 ## How Does This Work ℹ
 For understanding how these services work you will need some background with [docker](https://www.docker.com/why-docker). Assuming that you do...
