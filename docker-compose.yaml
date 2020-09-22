@@ -39,7 +39,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Toronto
+      - TZ=${TZ}
       - PASSWORD=${MASTER_PASSWORD} #optional 
       - SUDO_PASSWORD=${MASTER_PASSWORD} #optional 
       - JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
