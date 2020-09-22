@@ -11,8 +11,8 @@ var home = $("home");
 var codeBlock = $$("language-txt");
 var thisUrl = $("url");
 var preBlock = $("preBlock");
-let backString = link.substring(link.indexOf('.') +1);
-let backA = backString.substring(0, backString.indexOf('/'))
+let backString = link.substring(link.indexOf('/')+2);
+let backA = backString.substring(0, backString.indexOf('/'));
 let backB = backString.substring(backString.indexOf('content/')+8, backString.lastIndexOf('/'))
 
 back.setAttribute("href", "https://" +backA + "#" +backB);
